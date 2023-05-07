@@ -14,6 +14,7 @@
 </p>
 
 <!-- ABOUT THE PROJECT -->
+<a name="about"></a>
 ## About The Project
 
 A sliding block puzzle is a type of game that involves a set of different-shaped pieces that can be moved around within a confined space. The objective of the game is to move a particular piece, called the "goal piece," to a predetermined location within the game grid. In this specific puzzle, there are eight different pieces, with the goal piece being labeled as "Z." The goal of this puzzle is to move the Z piece to the right-hand edge of the grid.
