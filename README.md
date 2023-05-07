@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/AlexisRodriguezCS/GridWord/main/Images/Grid.jpg" alt="Grid" style="display:block;margin:auto;" height="500">
 </p>
-<h1 align="center">Grid World</h1>* [![C++][C++]][C++-url]
+<h1 align="center">Grid World</h1>
 
 <!-- TABLE OF CONTENTS -->
 <p align="center">
