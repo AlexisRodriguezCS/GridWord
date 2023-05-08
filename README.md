@@ -32,7 +32,7 @@ To set up a project locally, follow these simple steps.
 
 ### Prerequisites
 
-List things you need to use the program and how to install them.
+_List things you need to use the program and how to install them._
 * Visusal Studio Code (Optional)
 
 * MinGW
