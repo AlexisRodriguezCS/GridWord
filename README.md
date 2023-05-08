@@ -32,8 +32,8 @@ To set up a project locally, follow these simple steps.
 
 ### Prerequisites
 
-_List things you need to use the program._
-* [Visusal Studio Code](https://code.visualstudio.com/) (Optional)
+_Software used to run the program._
+* [Visusal Studio Code](https://code.visualstudio.com/)
 
 * [MinGW](https://sourceforge.net/projects/mingw/)
 
