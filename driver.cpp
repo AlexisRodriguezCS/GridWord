@@ -1,34 +1,35 @@
 
-#include "GridWorld.h"
-#include <string>
 #include <iostream>
 #include <sstream>
+#include <string>
 #include <vector>
 
-using std::cout;
+#include "GridWorld.h"
+
 using std::cin;
+using std::cout;
 using std::string;
 
 /**
- * simple driver program exercising some of the 
+ * simple driver program exercising some of the
  *   member functions in GridWorld.
  *
  */
 
-enum CmdResult {failure, success, quit};
+enum CmdResult { failure, success, quit };
 
 /* prints contens of an integer vector */
 void pvec(vector<int> *v) {
   cout << "  [ ";
-  for(int x : *v) {
+  for (int x : *v) {
     cout << x << " ";
   }
   cout << "]\n";
 }
 
 void arg_err(const string &cmd, int correct_nargs) {
-  cout << "usage error: " << cmd << " expects " 
-    << correct_nargs << " argument(s)\n";
+  cout << "usage error: " << cmd << " expects " << correct_nargs
+       << " argument(s)\n";
 }
 
 /* function for evaluating/applying a command:
@@ -41,69 +42,61 @@ void arg_err(const string &cmd, int correct_nargs) {
  *   success / failure depending whether the command exists, has correct
  *     number of parameters and if/when invoked on the gw object, the success
  *     or failure operation.
- *   
+ *
  *   Or returns quit if the "quit" command was issued.
  *
  */
 CmdResult eval_cmd(GridWorld *gw, const string &cmd, int args[], int nargs) {
-
-  if(cmd=="birth") { 
+  if (cmd == "birth") {
     int id;
 
-    if(nargs != 2){
+    if (nargs != 2) {
       arg_err(cmd, 2);
       return failure;
-    }
-    else {
-      if(!gw->birth(args[0], args[1], id) ) {
+    } else {
+      if (!gw->birth(args[0], args[1], id)) {
         cout << "  operation failed\n";
         return failure;
-      }
-      else {
+      } else {
         cout << "  operation succeeded\n";
         cout << "  PersonID: " << id << "\n";
         return success;
       }
     }
   }
-  if (cmd=="death" || cmd=="kill") { 
-    if(nargs != 1) {
+  if (cmd == "death" || cmd == "kill") {
+    if (nargs != 1) {
       arg_err(cmd, 1);
       return failure;
-    }
-    else {
-      if(!gw->death(args[0]) ) {
+    } else {
+      if (!gw->death(args[0])) {
         cout << "  operation failed\n";
         return failure;
-      }
-      else {
+      } else {
         cout << "  operation succeeded\n";
         return success;
       }
     }
   }
-  if(cmd=="move") { 
-    if(nargs != 3) {
+  if (cmd == "move") {
+    if (nargs != 3) {
       arg_err(cmd, 3);
       return failure;
-    }
-    else {
-      if(! gw->move(args[0], args[1], args[2]) ) {
+    } else {
+      if (!gw->move(args[0], args[1], args[2])) {
         cout << "  operation failed\n";
         return failure;
-      }
-      else {
+      } else {
         cout << "  operation succeeded\n";
         return success;
       }
     }
   }
-  if(cmd=="members") {
-    if(nargs != 2) {
+  if (cmd == "members") {
+    if (nargs != 2) {
       arg_err(cmd, 2);
       return failure;
-    }
-    else {
+    } else {
       vector<int> *members;
       members = gw->members(args[0], args[1]);
       pvec(members);
@@ -111,62 +104,56 @@ CmdResult eval_cmd(GridWorld *gw, const string &cmd, int args[], int nargs) {
       return success;
     }
   }
-  if(cmd=="whereis") {
-    if(nargs != 1) {
+  if (cmd == "whereis") {
+    if (nargs != 1) {
       arg_err(cmd, 1);
       return failure;
-    }
-    else {
+    } else {
       int row, col;
 
-      if(!gw->whereis(args[0], row, col )) {
+      if (!gw->whereis(args[0], row, col)) {
         cout << "  operation failed\n";
         return failure;
-      }
-      else {
+      } else {
         cout << "  district (" << row << ", " << col << ")\n";
         return success;
       }
     }
   }
-  if(cmd=="pop" || cmd=="population") {
-    if(nargs==0) {
+  if (cmd == "pop" || cmd == "population") {
+    if (nargs == 0) {
       cout << gw->population() << "\n";
       return success;
-    }
-    else if(nargs==2) {
+    } else if (nargs == 2) {
       cout << gw->population(args[0], args[1]) << "\n";
       return success;
-    }
-    else {
+    } else {
       arg_err(cmd, 0);
       cout << "      OR\n";
       arg_err(cmd, 2);
       return failure;
     }
   }
-  if(cmd=="nrows" || cmd=="num_rows") {
-    if(nargs!=0) {
+  if (cmd == "nrows" || cmd == "num_rows") {
+    if (nargs != 0) {
       arg_err(cmd, 0);
       return failure;
-    }
-    else {
-      cout <<  gw->num_rows() << "\n";
+    } else {
+      cout << gw->num_rows() << "\n";
       return success;
     }
   }
-  if(cmd=="ncols" || cmd=="num_cols") {
-    if(nargs!=0) {
+  if (cmd == "ncols" || cmd == "num_cols") {
+    if (nargs != 0) {
       arg_err(cmd, 0);
       return failure;
-    }
-    else {
-      cout <<  gw->num_cols() << "\n";
+    } else {
+      cout << gw->num_cols() << "\n";
       return success;
     }
   }
-  if(cmd=="quit") {
-    if(nargs!=0) {
+  if (cmd == "quit") {
+    if (nargs != 0) {
       arg_err(cmd, 0);
       return failure;
     }
@@ -176,14 +163,11 @@ CmdResult eval_cmd(GridWorld *gw, const string &cmd, int args[], int nargs) {
   return failure;
 }
 
-
-
-
 /*
  * defaults to a 5x5 grid.
  *
  */
-int main(){
+int main() {
   GridWorld *gw = new GridWorld(5, 5);
   string line;
 
@@ -203,7 +187,6 @@ int main(){
   cout << "    num_cols\n";
   cout << "    quit\n\n";
 
-
   bool done = false;
 
   do {
@@ -215,17 +198,16 @@ int main(){
     // now create a "stringstream" on the line just read
     std::stringstream ss(line);
 
-    int i=0;
     string cmd;
     string junk;
 
-    ss >> cmd;  // extract first token as command
+    ss >> cmd;   // extract first token as command
 
     // up to 3 integer arguments should follow
     int args[3];
-    int n=0;
+    int n = 0;
     // extract command arguments
-    while(n < 3 && ss >> args[n] ) { 
+    while (n < 3 && ss >> args[n]) {
       n++;
     }
 
@@ -233,10 +215,9 @@ int main(){
     //   parsed 0-3 integer arguments into args[]
     //
     // let eval_cmd try to apply the command
-    if(eval_cmd(gw, cmd, args, n) == quit)
-        done=true;
+    if (eval_cmd(gw, cmd, args, n) == quit) done = true;
 
-  } while(!done && !cin.eof());
+  } while (!done && !cin.eof());
 
   delete gw;
 

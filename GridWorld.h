@@ -2,15 +2,15 @@
 #ifndef _GRID_WORLD_H
 #define _GRID_WORLD_H
 
-#include "DoublyLinkedList.h"
 #include <iostream>
 #include <vector>
+
+#include "DoublyLinkedList.h"
 using std::vector;
 using namespace std;
 
 class GridWorld {
-
-private:
+ private:
   // private stuff goes here!
   //   typedefs
   //   data members
@@ -24,8 +24,7 @@ private:
   vector<Person> ID;
   DoublyLinkedList Dead;
 
-public:
-  
+ public:
   /**
    * constructor:  initializes a "world" with nrows and
    *    ncols (nrows*ncols districtcs) in which all
@@ -35,7 +34,7 @@ public:
     // your constructor code here!
     vector<District> singleRow(ncols, District());
     vector<vector<District>> temp(nrows, singleRow);
-    Grid = temp;  
+    Grid = temp;
     gridPopulation = 0;
     idCounter = 0;
     nRows = nrows;
@@ -46,12 +45,12 @@ public:
   ~GridWorld() {
     // your destructor code here.
     // Sets all the ID pointers to null and deletes them
-    for (int i = 0; i < ID.size(); i++) {
+    for (size_t i = 0; i < ID.size(); i++) {
       ID.at(i).setNullAndDelete();
     }
     // Go through every district and delete the DoublyLinkedList
-    for (int i = 0; i < Grid.size(); i++) {
-      for (int j = 0; j < Grid[i].size(); j++) {
+    for (size_t i = 0; i < Grid.size(); i++) {
+      for (size_t j = 0; j < Grid[i].size(); j++) {
         Grid[i][j].List.deleteAllNodes();
       }
     }
@@ -68,9 +67,9 @@ public:
    * return:  indicates success/failure
    */
   bool birth(int row, int col, int &idNum) {
-    if(row < 0 || row > nRows || col < 0 || col > nCols){
-      return false; 
-    } 
+    if (row < 0 || row > nRows || col < 0 || col > nCols) {
+      return false;
+    }
     // Checks if there's any dead people( get one of ther ids )
     if (Dead.isEmpty()) {
       // No dead people just use the idCounter
@@ -88,7 +87,7 @@ public:
       ID.at(idNum).y = col;
     }
     // Pointer to the node in District Doubly Linked List
-    Node* newNode = new Node(idNum);
+    Node *newNode = new Node(idNum);
     ID.at(idNum).pointer = newNode;
     ID.at(idNum).alive = true;
     gridPopulation++;
@@ -106,11 +105,12 @@ public:
    */
   bool death(int personID) {
     // Checks if person is alive or id is out of bounds.
-    // For example if only 3 people have been born then ID 200928 is out of bounds
+    // For example if only 3 people have been born then ID 200928 is out of
+    // bounds
     if (ID.at(personID).alive == false || personID > idCounter) {
-     return false;
+      return false;
     }
-    // If the person is alive 
+    // If the person is alive
     int xAxis = ID.at(personID).x;
     int yAxis = ID.at(personID).y;
     // Subtract District's population
@@ -134,9 +134,10 @@ public:
    */
   bool whereis(int id, int &row, int &col) const {
     // Checks if person is alive or id is out of bounds.
-    // For example if only 3 people have been born then ID 200928 is out of bounds
+    // For example if only 3 people have been born then ID 200928 is out of
+    // bounds
     if (ID.at(id).alive == false || id > idCounter) {
-     return false;
+      return false;
     }
     row = ID.at(id).x;
     col = ID.at(id).y;
@@ -157,10 +158,11 @@ public:
   bool move(int id, int targetRow, int targetCol) {
     // Checking if person is alive
     if (ID.at(id).alive == false) {
-     return false;
+      return false;
     }
     // Checking for out of bounds
-    if (targetRow < 0 || targetCol < 0 || targetRow >= nRows || targetCol >= nCols) {
+    if (targetRow < 0 || targetCol < 0 || targetRow >= nRows ||
+        targetCol >= nCols) {
       return false;
     }
     // Delete them from the old District Doubly Linked List
@@ -168,16 +170,16 @@ public:
     int oldY = ID.at(id).y;
     Grid[oldX][oldY].List.deleteNode(ID.at(id).pointer);
     Grid[oldX][oldY].population--;
-    // Set the Person's x, y to the new District x, y 
-    Node* newNode = new Node(id);
+    // Set the Person's x, y to the new District x, y
+    Node *newNode = new Node(id);
     ID.at(id).pointer = newNode;
     ID.at(id).x = targetRow;
     ID.at(id).y = targetCol;
-    //Add them no the new District LinkedList
+    // Add them no the new District LinkedList
     Grid[targetRow][targetCol].List.appendNode(newNode);
     Grid[targetRow][targetCol].population++;
-    return true; 
-    }
+    return true;
+  }
 
   /*
    * function: members
@@ -195,10 +197,9 @@ public:
    *   also returned if there is no one living the in specified vector.
    */
   std::vector<int> *members(int row, int col) const {
-    vector<int> * empty;
     if (row < 0 || col < 0 || row >= nRows || col >= nCols) {
       // If there is no such district
-      return empty;
+      return {};
     }
     return Grid[row][col].List.getVector();
   }
@@ -207,9 +208,7 @@ public:
    * function: population
    * description:  returns the current (living) population of the world.
    */
-  int population() const { 
-    return gridPopulation; 
-    }
+  int population() const { return gridPopulation; }
 
   /*
    * function: population(int,int)
