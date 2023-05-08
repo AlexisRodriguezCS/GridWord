@@ -33,11 +33,11 @@ To set up a project locally, follow these simple steps.
 ### Prerequisites
 
 _List things you need to use the program._
-* Visusal Studio Code (Optional) [VSC](https://vscode.dev/)
+* Visusal Studio Code (Optional) [Download Here](https://code.visualstudio.com/)
 
-* MinGW
+* MinGW [Download Here](https://sourceforge.net/projects/mingw/)
 
-* Git
+* Git [Download Here](https://git-scm.com/)
 
 ### Installation
 _Here's how to install and set up the program._
