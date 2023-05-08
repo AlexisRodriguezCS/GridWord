@@ -42,4 +42,20 @@ _Software used to run the program._
 ### Installation
 _Here's how to install and set up the program._
 
+From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/AlexisRodriguezCS/GridWord.git
+
+# Go into the repository
+$ cd GridWorld
+
+# Compile code into an executable
+$ make build
+
+# Run the program
+$ make run
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
