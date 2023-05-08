@@ -10,7 +10,7 @@
   <a href="#about">About The Project</a> •
   <a href="#getting-started">Getting Started</a> •
   <a href="#usage">Usage</a> •
-  <a href="#Contact">Contact</a>
+  <a href="#contact">Contact</a>
 </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -28,6 +28,7 @@ Here's an online demo of the project hosted on [repl.it](https://replit.com/@Ale
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
+<a name="getting-started"></a>
 ## Getting Started
 
 To set up a project locally, follow these simple steps.
@@ -59,5 +60,18 @@ $ make build
 # Run the program
 $ make run
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- USAGE -->
+<a name="usage"></a>
+
+<!-- CONTACT -->
+<a name="contact"></a>
+## Contact
+
+Alexis Rodriguez - [LinkedIn](https://www.linkedin.com/in/alexisrodriguezcs/) - alexisrodriguezdev@gmail.com
+
+Project Link: [https://github.com/AlexisRodriguezCS/GridWord](https://github.com/AlexisRodriguezCS/GridWord)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
