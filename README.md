@@ -65,6 +65,13 @@ $ make run
 
 <!-- USAGE -->
 <a name="usage"></a>
+## Usage
+
+Put Screenshot of commands
+<br>
+Put Commands examples
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
 <a name="contact"></a>
