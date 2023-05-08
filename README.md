@@ -28,7 +28,7 @@ To achieve this, a program has been developed that takes a command-line argument
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To set up a project locally, follow these simple example steps.
+To set up a project locally, follow these simple steps.
 
 ### Prerequisites
 
