@@ -17,11 +17,11 @@
 <a name="about"></a>
 ## About The Project
 
-A sliding block puzzle is a type of game that involves a set of different-shaped pieces that can be moved around within a confined space. The objective of the game is to move a particular piece, called the "goal piece," to a predetermined location within the game grid. In this specific puzzle, there are eight different pieces, with the goal piece being labeled as "Z." The goal of this puzzle is to move the Z piece to the right-hand edge of the grid.
+Welcome to GridWorld! In this world, every person is represented by a number and lives in a square-shaped district, unless they are dead. The world itself is an RxC grid, where each district is identified by its row and column, denoted by r∈{0..R-1} and c∈{0..C-1}. Sometimes, we may refer to a district as Dr,c.
 
-In order to solve the puzzle, all of the pieces must be moved in a specific order of moves. All pieces in this puzzle can be moved in any direction, either left/right or up/down. The ultimate aim of the game is to find the shortest solution to the puzzle that will move the goal piece to the right-hand side of the game grid, specifically the last column.
+The people in GridWorld are uniquely identified by an integer ID, similar to a social security number. The person IDs start from zero, and each living person resides in a single district. When a world is created, it has no people in it, and every district is a wasteland with no population. However, there are several operations that can be performed on the world once it's created.
 
-To achieve this, a program has been developed that takes a command-line argument, which is the name of a data file that contains all of the necessary information about the puzzle. The program will then output a sequence of moves that give the shortest possible solution to the puzzle. The program is designed to be efficient and fast, using algorithms and strategies that have been optimized to solve the sliding block puzzle as quickly as possible.
+The initial configuration of a world is determined by two things: the number of rows (R) and columns (C) in the grid. Once a world is created, it is possible to perform various operations such as adding people to the world or moving them between districts. GridWorld is an exciting and dynamic place, and by performing different operations, we can observe how the world and its inhabitants evolve over time.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
