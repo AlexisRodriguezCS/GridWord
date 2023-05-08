@@ -33,7 +33,7 @@ To set up a project locally, follow these simple steps.
 ### Prerequisites
 
 _List things you need to use the program._
-* Visusal Studio Code (Optional)
+* Visusal Studio Code (Optional) [VSC](https://vscode.dev/)
 
 * MinGW
 
