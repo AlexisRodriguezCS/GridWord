@@ -40,6 +40,6 @@ List things you need to use the program and how to install them.
 * Git
 
 ### Installation
-_Here's how to install and set up the program.
+_Here's how to install and set up the program._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
