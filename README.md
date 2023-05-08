@@ -23,13 +23,13 @@ The people in GridWorld are uniquely identified by an integer ID, similar to a s
 
 The initial configuration of a world is determined by two things: the number of rows (R) and columns (C) in the grid. Once a world is created, it is possible to perform various operations such as adding people to the world or moving them between districts. GridWorld is an exciting and dynamic place, and by performing different operations, we can observe how the world and its inhabitants evolve over time.
 
+Here's an online demo of the project hosted on [repl.it](https://replit.com/@Alexisrz/Grid-World) for you to try out.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Here's an online demo of the project hosted on [repl.it](https://replit.com/@Alexisrz/Grid-World) for you to try out.
-<br>
 To set up a project locally, follow these simple steps.
 
 ### Prerequisites
