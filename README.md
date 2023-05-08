@@ -24,3 +24,22 @@ In order to solve the puzzle, all of the pieces must be moved in a specific orde
 To achieve this, a program has been developed that takes a command-line argument, which is the name of a data file that contains all of the necessary information about the puzzle. The program will then output a sequence of moves that give the shortest possible solution to the puzzle. The program is designed to be efficient and fast, using algorithms and strategies that have been optimized to solve the sliding block puzzle as quickly as possible.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To set up a project locally, follow these simple example steps.
+
+### Prerequisites
+
+List things you need to use the program and how to install them.
+* Visusal Studio Code (Optional)
+
+* MinGW
+
+* Git
+
+### Installation
+_Here's how to install and set up the program.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
