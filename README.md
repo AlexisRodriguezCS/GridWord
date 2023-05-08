@@ -37,7 +37,7 @@ _List things you need to use the program._
 
 * MinGW [Download Here](https://sourceforge.net/projects/mingw/)
 
-* Git [Download Here](https://git-scm.com/)
+* Git _Download @ https://git-scm.com/_
 
 ### Installation
 _Here's how to install and set up the program._
