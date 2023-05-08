@@ -28,6 +28,7 @@ The initial configuration of a world is determined by two things: the number of 
 <!-- GETTING STARTED -->
 ## Getting Started
 
+Here's an online demo of the project hosted on [repl.it](https://replit.com/@Alexisrz/Grid-World) for you to try out.
 To set up a project locally, follow these simple steps.
 
 ### Prerequisites
