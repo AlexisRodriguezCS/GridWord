@@ -25,9 +25,6 @@ The initial configuration of a world is determined by two things: the number of 
 
 Here's an online demo of the project hosted on <a href="https://replit.com/@Alexisrz/Grid-World" target="_blank" >repl.it</a> for you to try out.
 
-Click [here](https://www.geeksforgeeks.org/){:target="_blank"} 
-to visit GeeksForGeeks website.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -39,11 +36,11 @@ To set up a project locally, follow these simple steps.
 ### Prerequisites
 
 _Software used to run the program._
-* [Visusal Studio Code](https://code.visualstudio.com/){target="_blank"}
+* [Visusal Studio Code](https://code.visualstudio.com/)
 
-* [MinGW](https://sourceforge.net/projects/mingw/){target="_blank"}
+* [MinGW](https://sourceforge.net/projects/mingw/)
 
-* [Git](https://git-scm.com/){target="_blank"}
+* [Git](https://git-scm.com/)
 
 ### Installation
 _Here's how to install and set up the program._
@@ -110,8 +107,8 @@ The following is a comprehensive list of commands available in the GridWorld Int
 <a name="contact"></a>
 ## Contact
 
-Alexis Rodriguez - [LinkedIn](https://www.linkedin.com/in/alexisrodriguezcs/){target="_blank"} - alexisrodriguezdev@gmail.com
+Alexis Rodriguez - [LinkedIn](https://www.linkedin.com/in/alexisrodriguezcs/) - alexisrodriguezdev@gmail.com
 
-Project Link: [https://github.com/AlexisRodriguezCS/GridWord](https://github.com/AlexisRodriguezCS/GridWord){target="_blank"}
+Project Link: [https://github.com/AlexisRodriguezCS/GridWord](https://github.com/AlexisRodriguezCS/GridWord){:target="_blank"} 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
