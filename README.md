@@ -99,7 +99,7 @@ The following is a comprehensive list of commands available in the GridWorld Int
 | `num_cols` | Print the number of columns in the GridWorld |
 | `quit` | Exit the program |
 
- <u>Additionally, it's worth noting that all functions, except for the 'members' function, have a runtime of O(1), making them highly efficient and fast for any size of the grid.<u>
+ <ins>Additionally, it's worth noting that all functions, except for the 'members' function, have a runtime of O(1), making them highly efficient and fast for any size of the grid.</ins>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
