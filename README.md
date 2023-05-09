@@ -67,11 +67,10 @@ $ make run
 <a name="usage"></a>
 ## Usage
 
-Put Screenshot of commands
-Welcome to the GridWorld Interactive Frontend
-=============================================
+# Welcome to the GridWorld Interactive Frontend
+# =============================================
 
-COMMANDS:
+## COMMANDS:
 
 - `birth <row> <col>`
 - `death <id>`
