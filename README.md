@@ -68,6 +68,22 @@ $ make run
 ## Usage
 
 Put Screenshot of commands
+Welcome to the GridWorld Interactive Frontend
+=============================================
+
+COMMANDS:
+
+- `birth <row> <col>`
+- `death <id>`
+- `move <id> <targe-row> <target-col>`
+- `members <row> <col>`
+- `whereis <id>`
+- `population`
+- `population <row> <col>`
+- `num_rows`
+- `num_cols`
+- `quit`
+
 <br>
 Put Commands examples
 
