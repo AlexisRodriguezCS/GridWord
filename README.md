@@ -23,7 +23,7 @@ The people in GridWorld are uniquely identified by an integer ID, similar to a s
 
 The initial configuration of a world is determined by two things: the number of rows (R) and columns (C) in the grid. Once a world is created, it is possible to perform various operations such as adding people to the world or moving them between districts. GridWorld is an exciting and dynamic place, and by performing different operations, we can observe how the world and its inhabitants evolve over time.
 
-Here's an online demo of the project hosted on [repl.it](https://replit.com/@Alexisrz/Grid-World) for you to try out.
+Here's an online demo of the project hosted on [repl.it](https://replit.com/@Alexisrz/Grid-World){target="_blank"} for you to try out.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -36,11 +36,11 @@ To set up a project locally, follow these simple steps.
 ### Prerequisites
 
 _Software used to run the program._
-* [Visusal Studio Code](https://code.visualstudio.com/)
+* [Visusal Studio Code](https://code.visualstudio.com/){target="_blank"}
 
-* [MinGW](https://sourceforge.net/projects/mingw/)
+* [MinGW](https://sourceforge.net/projects/mingw/){target="_blank"}
 
-* [Git](https://git-scm.com/)
+* [Git](https://git-scm.com/){target="_blank"}
 
 ### Installation
 _Here's how to install and set up the program._
@@ -107,8 +107,8 @@ The following is a comprehensive list of commands available in the GridWorld Int
 <a name="contact"></a>
 ## Contact
 
-Alexis Rodriguez - [LinkedIn](https://www.linkedin.com/in/alexisrodriguezcs/) - alexisrodriguezdev@gmail.com
+Alexis Rodriguez - [LinkedIn](https://www.linkedin.com/in/alexisrodriguezcs/){target="_blank"} - alexisrodriguezdev@gmail.com
 
-Project Link: [https://github.com/AlexisRodriguezCS/GridWord](https://github.com/AlexisRodriguezCS/GridWord)
+Project Link: [https://github.com/AlexisRodriguezCS/GridWord](https://github.com/AlexisRodriguezCS/GridWord){target="_blank"}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
