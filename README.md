@@ -84,8 +84,20 @@ After running the command "make run", the GridWorld Interactive Frontend program
 - `num_cols`
 - `quit`
 
-<br>
-Put Commands examples
+## The following is a comprehensive list of commands available in the GridWorld Interactive Frontend. Each command has a specific function that allows users to interact with the GridWorld program in various ways. Whether it's manipulating individual cells or determining population statistics
+
+| Command | Description |
+|---------|-------------|
+| `birth <row> <col>` | Create a new member at the specified location |
+| `death <id>` | Remove the member with the specified ID |
+| `move <id> <target-row> <target-col>` | Move the member with the specified ID to the specified location |
+| `members <row> <col>` | List the IDs of all members at the specified location |
+| `whereis <id>` | Print the location of the member with the specified ID |
+| `population` | List the total number of members in the GridWorld |
+| `population <row> <col>` | List the number of members at the specified location |
+| `num_rows` | Print the number of rows in the GridWorld |
+| `num_cols` | Print the number of columns in the GridWorld |
+| `quit` | Exit the program |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
