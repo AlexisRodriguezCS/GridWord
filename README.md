@@ -67,7 +67,7 @@ $ make run
 <a name="usage"></a>
 ## Usage
 
-After running the command "make run", the GridWorld Interactive Frontend program will be executed and the following output will be displayed in the terminal/console:
+### After running the command "make run", the GridWorld Interactive Frontend program will be executed and the following output will be displayed in the terminal/console:
 
 `Welcome to the GridWorld Interactive Frontend`
 
@@ -84,7 +84,7 @@ After running the command "make run", the GridWorld Interactive Frontend program
 - `num_cols`
 - `quit`
 
-## The following is a comprehensive list of commands available in the GridWorld Interactive Frontend. Each command has a specific function that allows users to interact with the GridWorld program in various ways. Whether it's manipulating individual cells or determining population statistics
+### The following is a comprehensive list of commands available in the GridWorld Interactive Frontend. Each command has a specific function that allows users to interact with the GridWorld program in various ways. Whether it's manipulating individual cells or determining population statistics
 
 | Command | Description |
 |---------|-------------|
