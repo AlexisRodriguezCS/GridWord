@@ -109,6 +109,6 @@ The following is a comprehensive list of commands available in the GridWorld Int
 
 Alexis Rodriguez - [LinkedIn](https://www.linkedin.com/in/alexisrodriguezcs/) - alexisrodriguezdev@gmail.com
 
-Project Link: [https://github.com/AlexisRodriguezCS/GridWord](https://github.com/AlexisRodriguezCS/GridWord){:target="_blank"} 
+Project Link: [https://github.com/AlexisRodriguezCS/GridWord](https://github.com/AlexisRodriguezCS/GridWord)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
