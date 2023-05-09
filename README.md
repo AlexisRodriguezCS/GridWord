@@ -84,7 +84,7 @@ After running the command "make run", the GridWorld Interactive Frontend program
 - `num_cols`
 - `quit`
 
-The following is a comprehensive list of commands available in the GridWorld Interactive Frontend. Each command has a specific function that allows users to interact with the GridWorld program in various ways, using integer values for arguments such as row, column, ID, target row, and target column. Whether it's manipulating individual cells or determining population statistics. **Additionally, it's worth noting that all functions, except for the 'members' function, have a runtime of O(1), making them highly efficient and fast for any size of the grid.**
+The following is a comprehensive list of commands available in the GridWorld Interactive Frontend. Each command has a specific function that allows users to interact with the GridWorld program in various ways, using integer values for arguments such as row, column, ID, target row, and target column. Whether it's manipulating individual cells or determining population statistics.
 
 | Command | Description |
 |---------|-------------|
@@ -98,6 +98,8 @@ The following is a comprehensive list of commands available in the GridWorld Int
 | `num_rows` | Print the number of rows in the GridWorld |
 | `num_cols` | Print the number of columns in the GridWorld |
 | `quit` | Exit the program |
+
+ **Additionally, it's worth noting that all functions, except for the 'members' function, have a runtime of O(1), making them highly efficient and fast for any size of the grid.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
