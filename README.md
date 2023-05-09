@@ -68,9 +68,10 @@ $ make run
 ## Usage
 
 # Welcome to the GridWorld Interactive Frontend
-# =============================================
 
-## COMMANDS:
+---
+
+### COMMANDS:
 
 - `birth <row> <col>`
 - `death <id>`
