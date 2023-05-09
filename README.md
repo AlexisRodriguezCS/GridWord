@@ -71,8 +71,6 @@ After running the command "make run", the GridWorld Interactive Frontend program
 
 `Welcome to the GridWorld Interactive Frontend`
 
-`=============================================`
-
 `COMMANDS:`
 
 - `birth <row> <col>`
