@@ -25,6 +25,9 @@ The initial configuration of a world is determined by two things: the number of 
 
 Here's an online demo of the project hosted on <a href="https://replit.com/@Alexisrz/Grid-World" target="_blank" >repl.it</a> for you to try out.
 
+Click [here](https://www.geeksforgeeks.org/){:target="_blank"} 
+to visit GeeksForGeeks website.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
