@@ -70,6 +70,9 @@ $ make run
 After running the command "make run", the GridWorld Interactive Frontend program will be executed and the following output will be displayed in the terminal/console:
 
 `Welcome to the GridWorld Interactive Frontend`
+
+`=============================================`
+
 `COMMANDS:`
 
 - `birth <row> <col>`
