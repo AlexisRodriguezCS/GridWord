@@ -1,8 +1,17 @@
+/***************************************************************
+ * Filename: TestingGridWorld.cpp
+ * Purpose:  Test cases for the GridWorld class using Catch2 framework
+ * Author:   Alexis Rodriguez
+ ***************************************************************/
+
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include "GridWorld.h"
 
+// Test cases for the GridWorld class
 TEST_CASE("GridWorld class") {
+
+  // Test case for the Constructor
   SECTION("Constructor") {
     GridWorld grid(3, 3);
     REQUIRE(grid.num_rows() == 3);
@@ -10,6 +19,7 @@ TEST_CASE("GridWorld class") {
     REQUIRE(grid.population() == 0);
   }
 
+  // Test case for the Birth method
   SECTION("Birth") {
     GridWorld grid(3, 3);
     int idNum;
@@ -26,6 +36,7 @@ TEST_CASE("GridWorld class") {
     REQUIRE(grid.birth(4, 4, idNum) == false);
   }
 
+  // Test case for the Death method
   SECTION("Death") {
     GridWorld grid(3, 3);
     int idNum;
@@ -39,10 +50,11 @@ TEST_CASE("GridWorld class") {
     // Trying to kill a dead person
     REQUIRE(grid.death(0) == false);
 
-    // Trying to kill a person with invalid ID
+    // Trying to kill a person with an invalid ID
     REQUIRE(grid.death(5) == false);
   }
 
+  // Test case for the Whereis method
   SECTION("Whereis") {
     GridWorld grid(3, 3);
     int idNum;
@@ -55,6 +67,7 @@ TEST_CASE("GridWorld class") {
     REQUIRE(col == 2);
   }
 
+  // Test case for the Move method
   SECTION("Move") {
     GridWorld grid(3, 3);
     int idNum;
@@ -74,6 +87,7 @@ TEST_CASE("GridWorld class") {
     REQUIRE(grid.move(0, 4, 4) == false);
   }
 
+  // Test case for the Members method
   SECTION("Members") {
     GridWorld grid(3, 3);
     int idNum;
@@ -97,6 +111,7 @@ TEST_CASE("GridWorld class") {
     delete members;
   }
 
+  // Test case for the Population method
   SECTION("Population") {
     GridWorld grid(3, 3);
     int idNum;
